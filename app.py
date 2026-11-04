@@ -1,6 +1,7 @@
 import matplotlib.pyplot as plt
 import streamlit as st
 import pandas as pd
+import japanize_matplotlib
 
 # 最高利益・最低利益・平均利益・カウント抽出関数
 def analyze_profit(months, profits):
