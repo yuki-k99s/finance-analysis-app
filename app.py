@@ -68,9 +68,11 @@ if uploaded_file is not None:
     ax.bar(months, profits)
     ax.axhline(0, color="gray")
 
-    ax.set_title("月別利益")
-    ax.set_xlabel("月")
-    ax.set_ylabel("利益（円）")
+    ax.set_title("月別利益", fontname="IPAexGothic")
+    ax.set_xlabel("月", fontname="IPAexGothic")
+    ax.set_ylabel("利益（円）", fontname="IPAexGothic")
+
+    ax.tick_params(axis="x")
     
     st.pyplot(fig)
     plt.close(fig)
