@@ -70,7 +70,6 @@ if uploaded_file is not None:
     ax.set_title("月別利益")
     ax.set_xlabel("月")
     ax.set_ylabel("利益（円）")
-
-    plt.rcParams["font.family"] = "Yu Gothic"
+    
     st.pyplot(fig)
     plt.close(fig)
