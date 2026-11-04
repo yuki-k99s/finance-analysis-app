@@ -1,6 +1,13 @@
 import matplotlib.pyplot as plt
 import streamlit as st
 import pandas as pd
+from matplotlib import font_manager
+
+# 日本語フォントを設定
+font_manager.fontManager.addfont(
+    "/usr/share/fonts/opentype/noto/NotoSansCJK-Regular.ttc")
+
+plt.rcParams["font.family"] = "Noto Sans CJK JP"
 
 # 最高利益・最低利益・平均利益・カウント抽出関数
 def analyze_profit(months, profits):
